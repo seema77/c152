@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+  <script src="https://cdn.rawgit.com/zcanter/aframe-gradient-sky/master/dist/gradientsky.min.js"></script>
+  <script src="Box.js"></script>
+ 
+
+</head>
+
+<body>
+
+  <a-scene background="color:#000000">
+
+    <a-camera wasd-controls-enabled="false" position="0 1.6 10">
+    </a-camera>   
+
+   
+<a-entity>
+  <!--part 1 cone-->
+  <a-cone id="part1" position="0 1.5 0" color="tomato" radius-bottom="0.5" radius-top="0.1"></a-cone>
+<!--part 2 cylinder-->
+<a-cylinder id="part2" position="0 -1 0" color="orange" radius="0.5" height="4"></a-cylinder>
+
+<!--part 3 cylinder bottom-->
+<a-cylinder id="part3" position="0 -3.5 0" color="blue" radius="0.56" height="1">
+  <a-triangle position="-0.93 -1 -0.9" scale="0.5 0.5 1" vertex-a="1 1 1" vertex-b="1 3 1" vertex-c="-1 1 1" color="blue"></a-triangle>
+  <a-triangle position="-0.07 -0.001 -0.9" rotation="0 0 270" scale="0.5 0.5 1" vertex-a="1 1 1" vertex-b="1 3 1" vertex-c="-1 1 1" color="blue"></a-triangle>
+</a-cylinder>
+</a-entity>
+   
+
+</a-scene>
+
+</body>
+
+</html>
+
